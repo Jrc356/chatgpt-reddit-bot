@@ -3,6 +3,9 @@
 This is a stupid little terminal Reddit bot that retrieves
 new posts from a specified subreddit and generates responses using ChatGPT.
 
+All it does is get `N` new posts from a specified subreddit and then get a ChatGPT response.
+It then prints things to the terminal... that's it, nothing special. Just some tinkering
+
 ## Prerequisites
 
 - Install Go 1.22

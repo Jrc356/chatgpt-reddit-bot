@@ -70,12 +70,6 @@ func GenerateText(params GenerateTextParams) (string, error) {
 		return "", fmt.Errorf("bad status from openai %d", resp.StatusCode)
 	}
 
-	// body, err := io.ReadAll(resp.Body)
-	// if err != nil {
-	// 	return "", err
-	// }
-	// fmt.Println(string(body))
-
 	var responseBody responseBody
 	if err := json.NewDecoder(resp.Body).Decode(&responseBody); err != nil {
 		return "", err
